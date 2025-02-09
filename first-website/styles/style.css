@@ -1,0 +1,39 @@
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00539f;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto; /*two values on margin/padding: top bottom, left right*/
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px; /*four values: top right bottom left*/
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black; /*horizontal offset, vertical offset, blur radius, base color*/
+}
+
+img {
+  display: block;
+  margin: 0 auto; /*to center image just like in body*/
+  /*however body is a block element while images are inline elements; for the auto margin trick to work, give it block-level behaviour using display: block*/
+  max-width: 100%; /*to make sure if image is larger than width set on body it will be displayed at this width not bigger*/
+}
